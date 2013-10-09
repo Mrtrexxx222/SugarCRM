@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^sms\.plus\-projects\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.sms\.plus\-projects\.com$
+RewriteRule ^/?$ "http\:\/\/plus\-projects\.com\/sms" [R=301,L]
+

@@ -1,0 +1,862 @@
+/* Plus-projects 12-08-2013*/
+
+
+@font-face {
+    font-family: 'Capriola-Regular';
+    src: url('../fonts/Capriola-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+
+li {
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	
+}
+body
+{
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: url(../img/bck.png) repeat left top;
+}
+
+
+.container{
+	width: 950px;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	max-height: 100%;
+	background-color: #fff;
+	box-shadow:0 0 20px #666666;
+	border: 1px solid #efaf13;
+	
+}
+
+.logo{
+	width: 290px;
+	height: 62px;
+	float: left;
+	position: relative;
+	display: block;
+	background: url(../img/logo_pp.png) no-repeat;
+	margin: 16px 0 0 34px;
+}
+
+.logo2{
+	float: right;
+	position: relative;
+	display: block;
+	margin: 20px 0 0 34px;
+	padding-right:15px;
+}
+	
+/* CSS MENU*/
+
+@import url(http://fonts.googleapis.com/css?family=Capriola-Regular);
+/* Let's import the lovely google font, please keep this line at the top of your stylesheet */
+/* Menu CSS */#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Capriola-Regular', sans-serif;
+}
+#cssmenu:before,
+#cssmenu:after,
+#cssmenu > ul:before,
+#cssmenu > ul:after {
+  content: '';
+  display: table;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  clear: both;
+}
+#cssmenu {
+  width: auto;
+  zoom: 1;
+  height: 69px;
+  background: url(../img/bottom-bg.png) repeat-x center bottom;
+  border-radius: 2px;
+  position: relative;
+  margin: 105px 0 0 0;
+}
+#cssmenu ul {
+  background: url(../img/nav-bg.png) repeat-x 0px 4px;
+  height: 69px;
+}
+#cssmenu ul li {
+  float: left;
+  list-style: none;
+}
+#cssmenu ul li a {
+  display: block;
+  height: 37px;
+  padding: 22px 30px 0;
+  margin: 4px 2px 0;
+  border-radius: 2px 2px 0 0;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  opacity: .9;
+}
+#cssmenu ul li:first-child a {
+  margin: 4px 2px 0 0;
+}
+#cssmenu ul li a:hover,
+#cssmenu ul li.active a {
+  background: url(../img/color.png) center bottom;
+  display: block;
+  height: 37px;
+  margin-top: 0px;
+  padding-top: 26px;
+  color: #600000;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.35);
+  opacity: 1;
+}
+
+/* FIN CSS MENU*/
+		
+.info_msg{
+	width: 275px;
+	padding: 0 0 5px;
+	float: left;
+	clear: none;
+	margin: 20px 0 0 25px;
+	position: relative;
+	display: inline-block;
+	font:  12px "Capriola-Regular";
+	color: #727272;
+
+}
+		
+.contenedor_login{
+	width: 340px;
+	padding-bottom:5px;
+	display: inline-block;
+	position: relative;
+	border: 1px solid #a18133;
+	-moz-border-radius: 0.5em ;
+    -webkit-border-radius:0.5em;
+    border-radius: 0.5em;
+    margin: 5% auto 0% auto;
+    }
+	
+.titulo_contenedor {
+	/*border:1px solid red;*/
+	border-bottom: 1px solid #dde0e8;
+    width: 320px;
+	float: right;
+	font:18px "Capriola-Regular";
+	color: #F9AF13;
+	padding-left:15px;
+	margin: 5px 0 0 50px;
+}
+    
+.ancholi {
+    width: 230px;
+	padding: 0 0 5px;
+	float: left;
+	clear: none;
+	margin: 30px 0 0 20px;
+	position: relative;
+	display: inline-block;
+	font:  16px "Capriola-Regular";
+	color: #444444;
+}
+
+
+.ancholi input {
+	width: 290px;
+	height: 36px;
+    margin: 10px 0 0 0;
+	padding: 0;
+	float: left;
+	clear: left;
+	border: 1px solid #999;
+	font-size: 12px;
+	background-color: #fff;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+
+}
+
+.olvido_password{	
+	display: block;	
+	position: relative;
+	float: left;
+	padding-left:10px;
+	margin: 30px 0 0 0;
+	cursor:pointer;
+	color: #0000EF;
+	font:11px "Capriola-Regular";
+	text-decoration:underline;
+}
+
+.boton_ingresar{
+	width: 340px;
+	height: 74px;
+	display: block;
+	background-color: #f7dda0;
+	border-top: 1px solid #dde0e8;
+	position: relative;
+	float: left;
+	margin: 30px 0 0 0;	
+}
+.boton_ingresarimagen{
+	width: 81px;
+	height: 34px;
+	margin: 25px 0 0;
+	float: right;
+	padding-right: 5px;
+	background: url(../img/btn_ingresar.png) no-repeat;	
+}
+
+/*pagina mensaje individual */
+
+.datos_login{
+	width: 300px;
+	float: right;
+	position: relative;
+	display: inline-block;
+	font:  16px "Capriola-Regular";
+	font-weight:bold;
+	text-align: right;
+	margin: 54px 0 0 0;
+	padding: 0 10px 0 0;
+	color: #444444;
+}
+
+.datos_loginALT{
+	color: #fcbe3f;
+}
+
+.imagen{
+	width: 337px;
+	height: 259px;
+	position: relative;
+	display: inline-block;
+	background: url(../img/img_celular.png) no-repeat;
+}
+
+.contenedor_formulario{
+	width: 584px;
+	display: inline-block;
+	position: relative;
+	margin: 30px 0 0 0;
+	border: 1px solid #9c9c9c;
+	-moz-border-radius: 0.5em ;
+    -webkit-border-radius:0.5em;
+    border-radius: 0.5em;
+   
+}
+.texto_formulario_ALT2{
+
+	float: left;
+	position: relative;
+	display: inline-block;
+	margin: 40px 0 0 5px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	color: #444444;
+	font:14px "Capriola-Regular";
+
+}
+.texto_formulario_ALT3{
+
+	float: left;
+	position: relative;
+	display: inline-block;
+	margin: 0px 0 0 5px;
+	padding-left: 30px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	color: #444444;
+	font:14px "Capriola-Regular";
+
+}
+.texto_formulario_x{
+		width: 200px;
+}
+.texto_fechas{
+	float: left;
+	position: relative;
+	display: inline-block;
+	margin: 0 0 0 33px;
+	padding: 6px;
+	color: #444444;
+	font:14px "Capriola-Regular";
+}
+
+.texto_formulario, .texto_formularioALT{
+
+	float: left;
+	position: relative;
+	display: inline-block;
+	margin: 35px 0 0 33px;
+	padding: 6px;
+	color: #444444;
+	font:14px "Capriola-Regular";
+
+}
+
+.texto_formulario{
+		width: 200px;
+}
+
+.texto_vinculo{	
+	width: 290px;
+	position: relative;
+	display: inline-block;	
+	padding: 6px;
+	color: #444444;
+	font:10px "Capriola-Regular";
+	text-decoration:underline;
+}
+	
+.texto_formularioALT{
+	width: 300px;
+}
+/*
+
+/*Modificado 13-08-2013*/
+.texto_fechas{
+	width: 47px;	
+	display: inline-block;
+	position: relative;
+	padding-bottom: 6px;
+	float: left;
+}
+
+.ancholiformulario {
+    width: 290px;
+	float: left;
+	clear: none;
+	padding: 0 0 10px;
+	position: relative;
+	display: inline-block;	
+	margin: 34px 0 0 0;
+}
+
+.ancholiformulario select{
+	width: 290px;
+	height: 33px;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  0 0 0 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+ border: 1px solid #999;
+   padding: 5px;
+   font-size: 16px;
+   float: left;
+}
+.ancholiformulario input[type=text]  {
+	width: 290px;
+	height: 33px;
+	float: left;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  0 0 0 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+	border: 1px solid #999;
+}
+
+.ancholiformulario input[type=text][readonly] {
+	width: 290px;
+	height: 33px;
+	float: left;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  0 0 0 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+	padding-left: 5px;
+	border: 0px solid #999;
+	background-color:#E1E1E1;
+}
+
+.ancholiformulario input[type=file] {
+	width: 290px;
+	padding: 5px;
+	float: left;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  0 0 0 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+	border: 1px solid #999;
+}
+
+.ancholiformulario2 {
+    
+	float: left;
+	clear: none;
+	padding: 0 0 10px;
+	float: left;
+	position: relative;
+	display: inline-block;
+	margin: 34px 0 0 0;
+}
+
+
+.ancholiformulario2 input {
+	width: 80px;
+	height: 32px;
+	float: left;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  0 0 0 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+ border: 1px solid #999;
+}
+
+.ancholiformulario2 input[readonly] {
+	width: 80px;
+	height: 32px;
+	float: left;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  0 0 0 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+	border: 0px solid #999;	
+	background-color:#E1E1E1;
+}
+
+.ancholiformulario textarea{
+	width: 294px;
+	height: 33px;
+	float: left;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  0 0 0 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+	border: 1px solid #999;
+}
+
+.ancholiformulario textarea[readonly]{
+	width: 294px;
+	height: 33px;
+	float: left;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  0 0 0 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+	border: 0px solid #999;
+	background-color:#E1E1E1;
+}
+
+.boton_enviar, .boton_borrar, .boton_enviarALT{
+	width: 79px;
+	height: 34px;
+	float: left;
+	display: inline-block;
+	position: relative;
+	cursor:pointer;	
+}
+
+.boton_enviar{
+	margin: 34px 0 30px 242px;
+}
+
+.boton_borrar{
+	margin: 34px 0 0 139px;
+}
+.boton_enviarALT{
+	margin: 34px 0 30px 132px;
+}
+
+.titulo_confirmacion{
+	width: 500px;
+	float: left;
+	position: relative;
+	font:18px "Capriola-Regular";
+		color: #F9AF13;
+		margin: 30px 0 0 33px;
+}
+
+
+.boton_subirarchivos{
+	width: 206px;
+	height: 34px;
+	float: left;
+	position: relative;
+	display: block;
+	margin: 74px 0 30px 244px;
+	background: url(../img/btn_subir_archivos.png) no-repeat;
+	cursor:pointer;
+}
+
+.ancholiformulario3{
+    width: 117px;
+	float: left;
+	clear: none;
+	padding: 0 0 10px;
+	float: left;
+	position: relative;
+	display: inline-block;
+	margin: 34px 0 0 0;
+}
+
+
+.ancholiformulario3 input {
+	height: 30px;
+	float: left;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  0 0 0 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+	border: 1px solid #999;
+}
+
+.ancholiformulario3 input[readonly] {
+	width: 75px;
+	height: 30px;
+	float: left;
+	text-align:right;
+	padding-right:5px;
+	padding-left:5px;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  0 0 0 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+	border: 0px solid #999;
+}
+
+/* Página reporte mensual*/
+
+.contenedor_reporte{
+	width: 890px;
+	position: relative;
+	display: block;
+	margin: 30px auto;
+	border: 1px solid #9c9c9c;
+	-moz-border-radius: 0.5em ;
+    -webkit-border-radius:0.5em;
+    border-radius: 0.5em;
+
+}
+
+
+.ancholifechas select{
+	width: 110px;
+	/*height: 33px;*/
+	float: left;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  34px 0 0 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+ border: 1px solid #999;
+   padding: 5px;
+   font-size: 16px;
+}
+
+.ancholifechas input{
+	width: 110px;
+	height: 33px;
+	float: left;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  34px 0 0 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+ border: 1px solid #999;
+   padding: 5px;
+   font-size: 16px;
+}
+
+.ancholifechas2 input{
+	width: 150px;
+	height: 28px;
+	float: left;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  5px 0px 0px 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+	border: 1px solid #999;
+	font-size: 16px;
+}
+
+.ancholifechas2 select{
+	width: 150px;
+	height: 33px;
+	float: left;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  5px 0px 0px 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+	border: 1px solid #999;
+    padding: 5px;
+	font-size: 16px;
+}
+/* PAGINA DE RANGO DE FECHAS*/
+
+/*modificado 13-08-2013*/
+.contenedor_fechas{
+	width: 800px;
+	position: relative;
+	display: inline-block;
+	margin: 10px 0 0 23px;
+}
+
+.boton_reporte{
+	width: 142px;
+	height: 33px;
+	float: left;
+	position: relative;
+	display: inline-block;
+	/*background: url(../img/btn_reporte.png) no-repeat;*/
+	margin:0px 0 0 30px;
+	cursor:pointer;
+}
+
+.imagen_reporte{
+	/*padding-top:25px;*/
+	/*padding-bottom:-60px;*/
+	/*border:1px solid red;*/
+	/*min-height:400px;*/
+	min-width:785px;
+	position: relative;
+	display: inline-block;
+	margin: 0 0 0 50px;
+}
+
+.boton_descargar{
+	width: 100px;
+	height: 34px;
+	position: relative;
+	display: inline-block;
+	margin: 74px 0 0;
+	background: url(../img/btn_descargar.png) no-repeat;
+	cursor:pointer;
+}
+
+.texto_formulario2{
+	position: relative;
+	display: inline-block;
+	margin: 34px 0 0 33px;
+	padding: 6px;
+	color: #444444;
+	font:14px "Capriola-Regular";
+		width: 200px;
+}
+.ancholiformulariotabla {
+    width: 290px;
+	clear: none;
+	padding: 0 0 10px;
+	position: relative;
+	display: inline-block;
+	margin: 34px 0 0 0;
+}
+.ancholiformulariotabla select{
+	width: 290px;
+	height: 33px;
+	display: inline;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:  0 0 0 5px;
+	-moz-border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 1px 4px #ededed;
+ border: 1px solid #999;
+   padding: 5px;
+   font-size: 16px;
+}
+
+.contenedor_tabla{
+	width: 832px;
+	/*position: relative;*/
+	display: block;
+	margin: 30px 0 0 17px;
+	border: 1px solid #9c9c9c;
+	-moz-border-radius: 0.5em ;
+    -webkit-border-radius:0.5em;
+    border-radius: 0.5em;
+    padding: 10px;
+    
+}
+
+table tr.cabecera{
+	height:36px;
+	background-color: #666666;
+}
+table tr.cabecera td.titulo1, td.titulo2, td.titulo3, td.titulo4, td.titulo5{
+	-moz-border-radius: 0.5em ;
+    -webkit-border-radius:0.5em;
+    border-radius: 0.5em;
+    font:14px "Capriola-Regular";
+		color: #c4c4c4;
+		padding: 10px;
+    }
+    
+table tr.cabecera td.titulo1{
+		width: 235px;
+
+    }
+    
+table tr.cabecera td.titulo2{
+		width: 133px;
+
+    }
+    
+table tr.cabecera td.titulo3{
+		width: 124px;
+    }
+    
+table tr.cabecera td.titulo4{
+		width: 168px;
+    }
+
+table tr.cabecera td.titulo5{
+		width: 140px;
+
+    }
+
+table tr.fila2{ 
+	height:32px;
+	background-color: #eaedf2;	
+}
+
+table tr.fila2 td.celda1{
+	    font:12px "Capriola-Regular";
+		color: #79797a;
+		padding: 10px;
+    }
+
+
+
+table tr.fila3{
+	height:32px;
+	background-color: #cccccc;
+}
+
+
+table tr.fila3 td.celda1{
+	    font:12px "Capriola-Regular";
+		color: #79797a;
+		padding: 10px;
+    }
+    
+#ui-datepicker-div{
+		font: 82.5% "Capriola-Regular";		
+	}    
+
+.boton_descargar2{
+	width: 100px;
+	height: 34px;
+	position: relative;
+	display: inline-block;
+	margin: 10px 0 24px 757px;
+	background: url(../img/btn_descargar.png) no-repeat;
+    cursor:pointer;
+}
+.ui-tooltip {
+	background: white;		
+}
+.ui-tooltip {
+	padding: 5px 5px;
+	color: black;
+	border-radius: 5px;
+	font: 12px "Capriola-Regular";		
+	box-shadow: 0 0 7px black;
+	border:1px solid #ededed;	
+}
+
+#info_pipe
+{
+	position: absolute;
+	display:none;
+	padding: 5px 5px;
+	color: black;
+	border-radius: 5px;
+	font: 12px "Capriola-Regular";		
+	box-shadow: 0 0 7px black;
+	border:1px solid #ededed;	
+	background-color:white;		
+}

@@ -1,0 +1,18 @@
+SELECT a.anio_c as Anio, a.mes_c as Mes, a.usuario_c as Relacionador, CONCAT(d.first_name,&#039; &#039;,d.last_name) as Farming, e.name as Cuenta, a.producto_c as Producto, c.name as Oportunidad, a.valor_prospectado_c as Prospeccion, c.probability as Probabilidad, c.id AS id_Op
+FROM m1_oportunidad_productos_cstm a, m1_oportunidad_productos b, opportunities c, users d, accounts e, accounts_opportunities f
+WHERE a.id_oportunidad_c = c.id
+AND a.id_c = b.id
+AND a.estado_c = &#039;1&#039;
+AND d.id = b.assigned_user_id
+AND c.deleted = &#039;0&#039;
+and e.deleted = &#039;0&#039;
+AND e.id = f.account_id
+AND c.id = f.opportunity_id
+ AND a.anio_c = &#039;2013&#039;
+AND c.probability IN (&#039;25&#039;,&#039;50&#039;,&#039;75&#039;,&#039;100&#039;)
+AND a.mes_c between 1 and 9
+AND a.id_usuario_c IN(&#039;eb649cda-285b-6bea-7e91-50d1d7c498df&#039;,&#039;d9b99e96-16f3-b459-deb1-50d1e300a6e1&#039;,&#039;c26e86ec-81a5-9ff0-6995-50d1d8f82b86&#039;,&#039;4b7103b9-685f-002d-b635-50d1e879e7d0&#039;,&#039;1f5985e0-f4a1-e113-8f70-50d1dcf8d76f&#039;,&#039;1cae851d-480c-f866-1855-51c9c5e67301&#039;,&#039;4a2adb37-884e-8093-0578-52162003796d&#039;,&#039;a510789e-4fb5-ab22-88c6-50d1e8a28e38&#039;,&#039;d129cf4c-5509-ed9a-8183-50d1de1ad1c5&#039;,&#039;6bd9c2db-8a0b-faa2-af16-50d1d5b8385c&#039;,&#039;b9c44886-a973-7221-ad2d-50d1d0f59209&#039;,&#039;580f6e61-8375-bea4-10f7-50d1e25013b5&#039;,&#039;39845b5c-2429-ab63-b929-50d1ea8e8f46&#039;,&#039;ac9a56e6-1ebc-0e25-7fb7-50d1e0b83921&#039;,&#039;7649361e-b887-53f9-6544-50d1dd01ecfe&#039;,&#039;85e2aa06-3b0b-76a5-6559-50d1cd9c583a&#039;,&#039;12b80b2a-9cc1-54cc-cd96-50d1d1b84a7e&#039;,&#039;b9140ce7-1b2f-b1b2-c2d5-50d1d660aaed&#039;,&#039;92641acf-c0fe-1a42-36e0-50d1db459100&#039;,&#039;40a7ef9a-bda4-8795-b524-50d1df80b0df&#039;,&#039;2ff93891-a684-04c3-feb0-50d1e77f4203&#039;,&#039;b5460ac0-da52-1c20-a245-50d1cece89bd&#039;,&#039;4ba3a391-47f8-4fe1-4de6-52138b6beed3&#039;,&#039;baaa9433-8b68-96c6-2883-50d1df4d218b&#039;,&#039;1dcfafa6-37da-d77d-b30b-50d1e9cb0551&#039;,&#039;5ea21c58-9731-3df8-f318-50d1d26ff0b1&#039;,&#039;8b4cd712-a13b-dc47-f965-50d1e9485e9a&#039;)
+AND a.categoria_c IN(&#039;GPTW&#039;,&#039;&#039;)
+AND a.producto_c IN(&#039;GPTW&#039;,&#039;&#039;)
+GROUP BY a.usuario_c, a.producto_c, a.cuenta_c, a.oportunidad_c
+ORDER BY a.mes_c+0 ASC, a.usuario_c ASC

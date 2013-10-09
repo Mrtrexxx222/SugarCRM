@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class CCValidator</title>
+            <style type="text/css">
+            a { color: #336699; text-decoration: none; }
+a:hover { color: #6699CC; text-decoration: underline; }
+a:active { color: #6699CC; text-decoration: underline; }
+
+body { background : #FFFFFF; }
+body, table { font-family: Georgia, Times New Roman, Times, serif; font-size: 10pt }
+p, li { line-height: 140% }
+a img { border: 0px; }
+dd { margin-left: 0px; padding-left: 1em; }
+
+/* Page layout/boxes */
+
+.info-box {}
+.info-box-title { margin: 1em 0em 0em 0em; padding: .25em; font-weight: normal; font-size: 14pt; border: 2px solid #999999; background-color: #CCCCFF }
+.info-box-body { border: 1px solid #999999; padding: .5em; }
+.nav-bar { font-size: 8pt; white-space: nowrap; text-align: right; padding: .2em; margin: 0em 0em 1em 0em; }
+
+.oddrow { background-color: #F8F8F8; border: 1px solid #AAAAAA; padding: .5em; margin-bottom: 1em}
+.evenrow { border: 1px solid #AAAAAA; padding: .5em; margin-bottom: 1em}
+
+.page-body { max-width: 800px; margin: auto; }
+.tree dl { margin: 0px }
+
+/* Index formatting classes */
+
+.index-item-body { margin-top: .5em; margin-bottom: .5em}
+.index-item-description { margin-top: .25em }
+.index-item-details { font-weight: normal; font-style: italic; font-size: 8pt }
+.index-letter-section { background-color: #EEEEEE; border: 1px dotted #999999; padding: .5em; margin-bottom: 1em}
+.index-letter-title { font-size: 12pt; font-weight: bold }
+.index-letter-menu { text-align: center; margin: 1em }
+.index-letter { font-size: 12pt }
+
+/* Docbook classes */
+
+.description {}
+.short-description { font-weight: bold; color: #666666; }
+.tags {	padding-left: 0em; margin-left: 3em; color: #666666; list-style-type: square; }
+.parameters {	padding-left: 0em; margin-left: 3em; font-style: italic; list-style-type: square; }
+.redefinitions { font-size: 8pt; padding-left: 0em; margin-left: 2em; }
+.package {  }
+.package-title { font-weight: bold; font-size: 14pt; border-bottom: 1px solid black }
+.package-details { font-size: 85%; }
+.sub-package { font-weight: bold; font-size: 120% }
+.tutorial { border-width: thin; border-color: #0066ff }
+.tutorial-nav-box { width: 100%; border: 1px solid #999999; background-color: #F8F8F8; }
+.nav-button-disabled { color: #999999; }
+.nav-button:active,
+.nav-button:focus,
+.nav-button:hover { background-color: #DDDDDD; outline: 1px solid #999999; text-decoration: none }
+.folder-title { font-style: italic }
+
+/* Generic formatting */
+
+.field { font-weight: bold; }
+.detail { font-size: 8pt; }
+.notes { font-style: italic; font-size: 8pt; }
+.separator { background-color: #999999; height: 2px; }
+.warning {  color: #FF6600; }
+.disabled { font-style: italic; color: #999999; }
+
+/* Code elements */
+
+.line-number {  }
+
+.class-table { width: 100%; }
+.class-table-header { border-bottom: 1px dotted #666666; text-align: left}
+.class-name { color: #000000; font-weight: bold; }
+
+.method-summary { padding-left: 1em; font-size: 8pt }
+.method-header { }
+.method-definition { margin-bottom: .3em }
+.method-title { font-weight: bold; }
+.method-name { font-weight: bold; }
+.method-signature { font-size: 85%; color: #666666; margin: .5em 0em }
+.method-result { font-style: italic; }
+
+.var-summary { padding-left: 1em; font-size: 8pt; }
+.var-header { }
+.var-title { margin-bottom: .3em }
+.var-type { font-style: italic; }
+.var-name { font-weight: bold; }
+.var-default {}
+.var-description { font-weight: normal; color: #000000; }
+
+.include-title {  }
+.include-type { font-style: italic; }
+.include-name { font-weight: bold; }
+
+.const-title {  }
+.const-name { font-weight: bold; }
+
+/* Syntax highlighting */
+
+.src-code {  border: 1px solid #336699; padding: 1em; background-color: #EEEEEE; }
+.src-line {  font-family: 'Courier New', Courier, monospace; font-weight: normal; }
+
+.src-comm { color: green; }
+.src-id {  }
+.src-inc { color: #0000FF; }
+.src-key { color: #0000FF; }
+.src-num { color: #CC0000; }
+.src-str { color: #66cccc; }
+.src-sym { font-weight: bold; }
+.src-var { }
+
+.src-php { font-weight: bold; }
+
+.src-doc { color: #009999 }
+.src-doc-close-template { color: #0000FF }
+.src-doc-coretag { color: #0099FF; font-weight: bold }
+.src-doc-inlinetag { color: #0099FF }
+.src-doc-internal { color: #6699cc }
+.src-doc-tag { color: #0080CC }
+.src-doc-template { color: #0000FF }
+.src-doc-type { font-style: italic }
+.src-doc-var { font-style: italic }
+
+.tute-tag { color: #009999 }
+.tute-attribute-name { color: #0000FF }
+.tute-attribute-value { color: #0099FF }
+.tute-entity { font-weight: bold; }
+.tute-comment { font-style: italic }
+.tute-inline-tag { color: #636311; font-weight: bold }
+
+/* tutorial */
+
+.authors {  }
+.author { font-style: italic; font-weight: bold }
+.author-blurb { margin: .5em 0em .5em 2em; font-size: 85%; font-weight: normal; font-style: normal }
+.example { border: 1px dashed #999999; background-color: #EEEEEE; padding: .5em; }
+*[class="example"] { line-height : 0.5em }
+.listing { border: 1px dashed #999999; background-color: #EEEEEE; padding: .5em; white-space: nowrap; }
+*[class="listing"] { line-height : 0.5em }
+.release-info { font-size: 85%; font-style: italic; margin: 1em 0em }
+.ref-title-box {  }
+.ref-title {  }
+.ref-purpose { font-style: italic; color: #666666 }
+.ref-synopsis {  }
+.title { font-weight: bold; margin: 1em 0em 0em 0em; padding: .25em; border: 2px solid #999999; background-color: #CCCCFF  }
+.cmd-synopsis { margin: 1em 0em }
+.cmd-title { font-weight: bold }
+.toc { margin-left: 2em; padding-left: 0em }
+
+            </style>
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">
+<h2 class="class-name">Class CCValidator</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Credit card validation class</p>
+<p class="description"><p>This class implements Mod 10 algorithm to validate a credit card number. It  also checks if a credit card number prefix and an exparation date are correct.</p><p>Example of usage:</p><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$ccv&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><a href="../ADirectRide/CCValidator.html#methodCCValidator">CCValidator</a><span class="src-sym">(</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'JOHN&nbsp;JOHNSON'</span><span class="src-sym">,&nbsp;</span><span class="src-id"><a href="../ADirectRide/_ccvalidator.class.php.html#defineCCV_AMERICAN_EXPRESS">CCV_AMERICAN_EXPRESS</a></span><span class="src-sym">,&nbsp;</span><span class="src-str">'378282246310005'</span><span class="src-sym">,&nbsp;</span><span class="src-num">3</span><span class="src-sym">,&nbsp;</span><span class="src-num">2007</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-var">$validCard&nbsp;</span>=&nbsp;<span class="src-var">$ccv</span><span class="src-sym">-&gt;</span><a href="../ADirectRide/CCValidator.html#methodvalidate">validate</a><span class="src-sym">(</span><span class="src-sym">))&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-var">$validCard&nbsp;</span><span class="src-sym">&amp;&nbsp;</span><span class="src-id"><a href="../ADirectRide/_ccvalidator.class.php.html#defineCCV_RES_ERR_HOLDER">CCV_RES_ERR_HOLDER</a></span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">'Card&nbsp;holder\'s&nbsp;name&nbsp;is&nbsp;missing&nbsp;or&nbsp;incorrect.&lt;br&nbsp;/&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-var">$validCard&nbsp;</span><span class="src-sym">&amp;&nbsp;</span><span class="src-id"><a href="../ADirectRide/_ccvalidator.class.php.html#defineCCV_RES_ERR_TYPE">CCV_RES_ERR_TYPE</a></span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">'Incorrect&nbsp;credit&nbsp;card&nbsp;type.&lt;br&nbsp;/&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-var">$validCard&nbsp;</span><span class="src-sym">&amp;&nbsp;</span><span class="src-id"><a href="../ADirectRide/_ccvalidator.class.php.html#defineCCV_RES_ERR_DATE">CCV_RES_ERR_DATE</a></span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">'Incorrect&nbsp;expiration&nbsp;date.&lt;br&nbsp;/&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-var">$validCard&nbsp;</span><span class="src-sym">&amp;&nbsp;</span><span class="src-id"><a href="../ADirectRide/_ccvalidator.class.php.html#defineCCV_RES_ERR_FORMAT">CCV_RES_ERR_FORMAT</a></span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">'Incorrect&nbsp;credit&nbsp;card&nbsp;number&nbsp;format.&lt;br&nbsp;/&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-var">$validCard&nbsp;</span><span class="src-sym">&amp;&nbsp;</span><span class="src-id"><a href="../ADirectRide/_ccvalidator.class.php.html#defineCCV_RES_ERR_NUMBER">CCV_RES_ERR_NUMBER</a></span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">'Invalid&nbsp;credit&nbsp;card&nbsp;number.&lt;br&nbsp;/&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}&nbsp;</span><span class="src-key">else&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">'Credit&nbsp;card&nbsp;information&nbsp;is&nbsp;valid.&lt;br&nbsp;/&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Vagharshak Tozalakyan &lt;<a href="mailto:vagh@tozalakyan.com">vagh@tozalakyan.com</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">see:</span> <a href="http://www.beachnet.com/~hstiles/cardtype.html">http://www.beachnet.com/~hstiles/cardtype.html</a></li>
+			</ul>
+
+
+		<pre></pre>
+
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							|
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																								<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$cardExpiredMonth" title="details" class="var-name">$cardExpiredMonth</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$cardExpiredYear" title="details" class="var-name">$cardExpiredYear</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$cardHolder" title="details" class="var-name">$cardHolder</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$cardNumber" title="details" class="var-name">$cardNumber</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$cardType" title="details" class="var-name">$cardType</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">
+			<div class="method-summary">
+
+												<div class="method-definition">
+											<span class="method-result">CCValidator</span>
+										<a href="#CCValidator" title="details" class="method-name">CCValidator</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$cardHolder</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$cardType</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cardNumber</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$cardExpiredMonth</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$cardExpiredYear</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#validate" title="details" class="method-name">validate</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+
+
+										|
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+
+					</div>
+		<div class="info-box-body">
+			<a name="var$cardExpiredMonth" id="$cardExpiredMonth"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$cardExpiredMonth</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">155</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Credit card expiration month</p>
+<p class="description"><p>1-12 or 0 if not set. Read only. Use constructor to set the value.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+
+
+
+
+
+</div>
+<a name="var$cardExpiredYear" id="$cardExpiredYear"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$cardExpiredYear</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">165</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Credit card expiration year</p>
+<p class="description"><p>YYYY or 0 if not set. Read only. Use constructor to set the value.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+
+
+
+
+
+</div>
+<a name="var$cardHolder" id="$cardHolder"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$cardHolder</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">123</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Credit card holder's name</p>
+<p class="description"><p>Read only. Use constructor to set the value.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+
+
+
+
+
+</div>
+<a name="var$cardNumber" id="$cardNumber"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$cardNumber</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">145</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Credit card number</p>
+<p class="description"><p>Read only. Use constructor to set the value.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+
+
+
+
+
+</div>
+<a name="var$cardType" id="$cardType"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$cardType</span>
+			 = <span class="var-default"> -1</span>			(line <span class="line-number">135</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Credit card type</p>
+<p class="description"><p>CCV_MASTER_CARD - 0, CCV_VISA - 1, CCV_AMERICAN_EXPRESS - 2,  CCV_DINERS_CLUB - 3, CCV_DISCOVER - 4, CCV_JCB - 5 or -1 if no card.  Read only. Use constructor to set the value.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+
+
+
+
+
+</div>
+
+		</div>
+	</div>
+
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodCCValidator" id="CCValidator"><!-- --></a>
+<div class="oddrow">
+
+	<div class="method-header">
+		<span class="method-title">Constructor CCValidator</span> (line <span class="line-number">181</span>)
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+
+	<div class="method-signature">
+		<span class="method-result">CCValidator</span>
+		<span class="method-name">
+			CCValidator
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$cardHolder</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$cardType</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cardNumber</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$cardExpiredMonth</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$cardExpiredYear</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cardHolder</span><span class="var-description">: Credit card holder's name.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$cardType</span><span class="var-description">: Credit card type.                                      CCV_MASTER_CARD - 0, CCV_VISA - 1,                                      CCV_AMERICAN_EXPRESS - 2, CCV_DINERS_CLUB - 3,                                      CCV_DISCOVER - 4, CCV_JCB - 5.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cardNumber</span><span class="var-description">: Credit card number</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$cardExpiredMonth</span><span class="var-description">: Credit card expiration month. 1-12.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$cardExpiredYear</span><span class="var-description">: Credit card expiration year in YYYY format.</span>			</li>
+				</ul>
+
+
+	</div>
+<a name="methodvalidate" id="validate"><!-- --></a>
+<div class="evenrow">
+
+	<div class="method-header">
+		<span class="method-title">validate</span> (line <span class="line-number">203</span>)
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validate credit card information</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Validation result as a bitwise combination of following numbers:                   CCV_RES_VALID - credit card information is valid;                   CCV_RES_ERR_HOLDER - card holder's name is missing or incorrect;                   CCV_RES_ERR_TYPE - incorrect credit card type;                   CCV_RES_ERR_DATE - incorrect expiration date;                   CCV_RES_ERR_FORMAT - incorrect credit card number format;                   CCV_RES_ERR_NUMBER - invalid credit card number.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			validate
+		</span>
+				()
+			</div>
+
+
+
+	</div>
+
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor</a>
+	</p>
+	</div></body>
+</html>

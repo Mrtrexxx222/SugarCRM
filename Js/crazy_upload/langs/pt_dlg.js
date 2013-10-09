@@ -1,0 +1,1 @@
+tinyMCE.addI18n('pt.crazyuploader_dlg',{});

@@ -1,0 +1,241 @@
+/**
+ * Copyright 2012, Sandro Alves Peres
+ * sandrinhodobanjo@yahoo.com.br
+ */
+ 
+ .crazyuploader_text {
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;;
+    font-size: 10px;
+    font-weight: normal;
+    color: #222333;
+    text-decoration: none;
+ }
+ 
+ 
+.crazyuploader_tab_button {
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #C0C0C0;
+    background-color: #F9F9F9;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;;
+    font-size: 12px;
+    font-weight: bold;
+    color: #069;
+    float: left;
+}
+
+
+.crazyuploader_tab_button_selected {
+    background-color: #E6E7FA;
+    color: #069;
+}
+
+
+.crazyuploader_tab_button a {
+    height: 30px;
+    line-height: 30px;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;;
+    font-size: 11px;
+    font-weight: bold;
+    color: #069;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+}
+
+
+.crazyuploader_tab_button a:hover {
+    background-color: #E0E0E0;
+    color: #069;
+}
+
+
+.crazyuploader_tab_content {
+    display: none;
+}
+
+
+.crazyuploader_action_button {
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;;
+    font-size: 10px;
+    font-weight: normal;
+    color: #333444;
+    text-decoration: none;
+    border: 1px solid #A2A2A2;
+    padding: 3px;
+    height: 24px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;     
+}
+
+
+.crazyuploader_action_button:hover {
+    filter: progid:DXImageTransform.Microsoft.Gradient(endColorstr='#FFECB5', startColorstr='#FFFFFF', gradientType='0');		
+    background: -moz-linear-gradient(top, #FFFFFF, #FFECB5);	
+    background: linear-gradient(#FFFFFF, #FFECB5 50%);
+    background: -webkit-gradient(linear, 0 0, 0 50%, from(#FFFFFF), to(#FFECB5));
+    background-image: -o-linear-gradient(top, #FFFFFF, #FFECB5); 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFECB5, EndColorStr=#FFFFFF)";  
+    background-color: #FFFFCC;
+}
+
+
+.crazyuploader_file {
+    height: 22px;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;;
+    font-size: 11px;
+    font-weight: normal;
+    color: #444555;
+    text-decoration: none;
+    background-color: #FFF;
+    border: 1px solid #808080;  
+}
+
+
+.crazyuploader_search_input {
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: 1px solid #808080;
+    background-color: #FFF;
+    color: #222333;
+}
+
+
+.crazyuploader_loading_upload {
+    padding: 2px;
+    background: #FFF;
+    display: none;
+}
+
+
+.crazyuploader_uploaded_file {
+    padding: 2px;
+    background: #FFF;
+    display: none;
+}
+
+
+.crazyuploader_formats {
+    line-height: 22px;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;;
+    font-size: 10px;
+    font-weight: normal;
+    color: #079;
+    text-decoration: none;
+}
+
+
+.crazyuploader_table_search tr {
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;;
+    font-size: 11px;
+    font-weight: normal;
+    color: #222333;
+    text-decoration: none;
+    cursor: default;
+}
+
+
+.crazyuploader_table_search_header {
+    background-color: #DDDEEE; 
+}
+
+
+.crazyuploader_table_search_footer {
+    background-color: #E0E0E0; 
+}
+
+
+.crazyuploader_table_search_row_hover {
+    background-color: #E0E0E0; 
+}
+
+
+.crazyuploader_info {
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;;
+    font-size: 11px;
+    font-weight: normal;
+    color: #079;
+    text-decoration: none;
+    border: 1px solid #079;
+    background-color: #EEEFFF;
+    padding: 5px;
+    margin: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;     
+}
+
+
+.crazyuploader_error {
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;;
+    font-size: 11px;
+    font-weight: normal;
+    color: #BB0000;
+    text-decoration: none;
+    border: 1px solid #BB0000;
+    background-color: #FFFFEE;
+    padding: 5px;
+    margin: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;   
+}
+
+/*
+    Pagination Search File
+*/
+.crazyuploader_page_current {
+    cursor: pointer;        
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;        
+    background: #9CB4CC;
+    border: none;
+    -moz-box-shadow: 2px 2px 2px #888888;
+    -webkit-box-shadow: 2px 2px 2px #888888;
+    -khtml-box-shadow: 2px 2px 2px #888888;
+    box-shadow: 2px 2px 2px #888888;        
+}
+
+.crazyuploader_page_current:hover {
+    color: #FF9;
+    text-decoration: none;
+}     
+
+.crazyuploader_page_active {
+    cursor: pointer;        
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 10px;
+    font-weight: bold;
+    color: #111222;
+    text-decoration: none;        
+    background: #F9F9F9;
+    border: 1px solid #C0C0C0;        
+}  
+
+.crazyuploader_page_active:hover {
+    color: #069;
+    background: #E6E7FA;        
+    text-decoration: none;
+}
+
+.crazyuploader_page_arrow {
+    cursor: pointer;
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    color: #111222;
+    text-decoration: none;        
+    background: #F9F9F9;
+    border: 1px solid #C0C0C0;        
+}  
+
+.crazyuploader_page_arrow:hover {
+    color: #049;
+    background: #E6E7FA;
+    text-decoration: none;
+}   

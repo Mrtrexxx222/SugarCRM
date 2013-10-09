@@ -1,0 +1,52 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pb" lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="pt-br" />
+<meta http-equiv="expires" content="Wed, 15 Aug 2012 17:46:05 GMT" />
+<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="cache-control" content="post-check=0, pre-check=0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache" content="no-cache" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="revisit-after" content="-1 days" />
+<meta name="rating" content="general" />
+<meta name="author" content="Sandro Alves Peres" />
+<meta name="robots" content="NoIndex, NoFollow" />
+<meta name="googlebot" content="NoIndex, NoFollow" />
+<meta name="copyright" content="© 2012 Sandro Alves Peres" />
+<meta name="distribuition" content="global" />
+<meta name="DC.creator " content="Alves, Sandro" />
+<link href="css/crazyuploader.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js" language="javascript"></script>        
+<style media="all">
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #F0F0EE;
+    }
+</style>
+<script language="javascript" type="text/javascript">
+    document.oncontextmenu = new Function("return false");
+    
+    $(document).ready(function()
+    {
+        var allowSWF = ($("#hdAllowSWF", parent.document).val() == 1);
+        var formats  = '( jpg, jpeg, jpe, gif, png' + (allowSWF ? ', swf' : '') + ' )';
+        
+        $("#spanFormats").text( formats );
+    });
+</script>
+</head>
+    
+<body onscroll="return false;"> 
+    
+    <form name="frmUploadFile" id="frmUploadFile" method="post" enctype="multipart/form-data" action="crazyuploader_send_file.php">
+		
+        <input type="hidden" name="hdUploadFile" value="1" />
+        <input type="file" size="25" name="flFile" id="flFile" class="crazyuploader_file" />
+        <br /><span id="spanFormats" class="crazyuploader_formats"></span>
+        
+	</form>
+    
+</body> 
+</html>

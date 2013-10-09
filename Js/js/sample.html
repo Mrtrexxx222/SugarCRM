@@ -1,0 +1,48 @@
+<script language="javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script language="javascript" src="mostlc.class.js"></script>
+<style>
+body,TD { font-size:12px; font-family:Georgia, "Times New Roman", Times, serif}
+#blockquote_userlist A {display:block;}
+#blockquote_userlist B {color:#006600;}
+P { margin:0px;}
+</style>
+
+<table width="100%" height="100%" border="0">
+  <tr>
+    <td width="73%" height="51" valign="middle" bgcolor="#F3F3F3" style="border-right:1px solid #CCCCCC;"><blockquote>
+      <p>Message:
+        <input name="ob_themess" type="text" id="ob_themess" value="Please, enter your nickname... ---&gt;" size="80" maxlength="200" disabled="disabled" /> 
+        <input type="submit" name="ob_send" id="ob_send" value="Enviar" />
+      </p>
+    </blockquote></td>
+    <td width="27%" rowspan="2" valign="top">
+    <blockquote id="blockquote_userlist">
+      <p>Nickname:
+        <input type="text" name="txuser" id="txuser">
+        <input type="submit" name="buttonsend" id="buttonsend" value="Enviar">
+      </p>
+    </blockquote>
+    <label></label></td>
+  </tr>
+  <tr>
+    <td id="ob_allmessages" valign="top" style="border-right:1px solid #CCCCCC;"><p>----------------------------------------------------------------------------------<br />
+      The most little Chat  v1.0 write by <b>Dix&aacute;n Santiesteban Feria</b></p>
+      <p>¡With jquery and sessions! (without Installations, MySQL or files :-) try it and enjoy...</p>
+    </td>
+  </tr>
+</table>
+<div title="ventana" id="ventana">
+</div>
+</body>
+
+<script>
+/*	#txuser 	: Login user (text);
+	#buttonsend : Login submit 
+	#blockquote_userlist : User list (anything object)
+	#ob_allmessages : zone to write all messages on chat
+	#ob_themess : text to type words
+	#ob_send : object to submit the words to chat */
+	
+	 
+	var xx=new most_little_chat('#txuser','#buttonsend','#blockquote_userlist','#ob_allmessages','#ob_themess','#ob_send');
+</script>

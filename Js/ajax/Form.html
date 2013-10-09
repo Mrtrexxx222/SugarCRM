@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Test Ajax Form</title>
+		<Script src="jquery-1.3.2.min.js" type="text/javascript"></Script>
+		<Script src="AjaxFormSubmitter.js" type="text/javascript"></Script>
+		<script type="text/javascript">
+		
+		
+		function OnLoading () 
+		{
+			alert("I am loading"); 
+		}
+		
+		function OnSuccess (data)
+		{
+			alert ("request completed " ); 
+			alert(data); 
+		}
+		
+		function OnError (XML)
+		{
+			alert(XML);
+		}
+		function SendData(){
+				
+				var AjaxForm = new AjaxFormSubmitter("MyForm"); 
+				AjaxForm.SetURL("data.php");
+				AjaxForm.SetMethod("POST");
+				AjaxForm.SetOnSuccess(
+					function(data)
+						{
+							OnSuccess(data);
+						}
+					);
+				AjaxForm.SetOnFailure (
+					function (error)
+					{
+						OnError(error);
+					}
+				);
+				AjaxForm.SetOnLoading (
+					function (){
+						OnLoading(); 
+					}
+				)
+				AjaxForm.Submit(); 
+		} 	
+		</script>
+	</head>
+	<body>
+		
+				
+		
+		<form id="MyForm" action="#" method="post" >
+			
+			<input type="text" id="name" name="name" value="Text"/>  <br>
+			<input type="hidden" id="hidden" name="hidden" value="hiddenVlaue"/><br>
+			<input type="password" id="password" name="password" value="passwordValue"/><br>
+			<input type="checkbox" id="chbox1" name="chbox1"  checked="checked"/><br>
+			<input type="checkbox" id="chbox2" name="chbox2" /><br>
+			
+			<br><br>
+			<input type="radio" id="radio1" name="choice" value="1" />
+			<input type="radio" id="radio2" name="choice" value="2"/>
+			<input type="radio" id="radio3" name="choice" value="3" checked="checked"/>
+			<input type="radio" id="radio4" name="choice" value="4"/>
+			<br><br>
+			<select id="Select" multiple="multiple">
+				
+				<option value="option1">option one</option>
+				<option value="option2">option two</option>
+				<option value="option3">option three</option>
+			</select>
+			<br><br>
+			<textarea id="textarea">My Text Area</textarea>
+			<br><br>
+			<input type="button" value="Send Data" name="Send" onclick="SendData();"/>
+			
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<?php
+// created: 2013-07-30 23:37:54
+$mod_strings = array (
+  'LBL_QUOTES_SUBPANEL_TITLE' => 'Cotizaciones',
+  'LBL_DESCRIPTION' => 'Descripción:',
+  'LBL_DETAILVIEW_PANEL1' => 'Información de contrato',
+  'LBL_REVISADO' => 'Revisado 100%',
+  'LBL_EDITVIEW_PANEL1' => 'Información de contrato',
+  'LBL_SALES_STAGE' => 'Etapa de Ventas:',
+  'LBL_LEAD_SOURCE' => 'Origen:',
+  'LBL_DATE_CLOSED' => 'Fecha de Cierre:',
+  'LBL_NEXT_STEP' => 'Próximo Paso:',
+  'LBL_ACCOUNT_NAME' => 'Razón Social',
+  'LBL_EDITVIEW_PANEL2' => 'Productos',
+  'LBL_CONTACTO' => 'Contacto',
+  '{$MOD_LBL_AMOUNT}_({$CURRENCY})' => 'Cantidad de la Oportunidad',
+  'LBL_EDITVIEW_PANEL3' => 'detalle',
+  'LBL_EDITVIEW_PANEL4' => 'Productos',
+  'LBL_AMOUNT' => 'Total de Oportunidad (Autom):',
+  'LBL_QUICKCREATE_PANEL1' => 'Informacion de contrato',
+  'LBL_PROBABILITY' => 'Probabilidad (%):',
+  'LBL_OPPORTUNITY_NAME' => 'Nombre Oportunidad:',
+  'LBL_DATE_ENTERED' => 'Fecha de Creación',
+  'LBL_DELETED' => 'Eliminado',
+);

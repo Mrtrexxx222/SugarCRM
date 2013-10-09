@@ -1,0 +1,1 @@
+O:8:"ChatRoom":9:{s:4:"name";s:7:"newroom";s:7:"maxuser";i:2;s:5:"users";a:1:{s:6:"wilmer";O:4:"User":4:{s:4:"name";s:6:"wilmer";s:2:"ip";s:9:"127.0.0.1";s:6:"status";i:1;s:8:"lastline";i:0;}}s:5:"error";N;s:7:"message";N;s:7:"maxline";i:2000;s:8:"remlines";i:1;s:9:"onefromip";b:0;s:10:"mymessages";N;}
